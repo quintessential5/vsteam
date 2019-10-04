@@ -1,5 +1,5 @@
 function Remove-VSTeamTaskGroup {
-   [CmdletBinding()]
+   [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = "Low")]
    param(       
       [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
       [string[]] $Id,
